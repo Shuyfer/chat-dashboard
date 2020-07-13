@@ -1,0 +1,65 @@
+@import 'vars.scss';
+@import 'fonts.scss';
+
+*{
+  padding:0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+ padding: 30px 30px 0 0;
+ background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  grid-auto-cols: minmax(300px, auto);
+  padding: 0;
+  margin-bottom: 0;
+  justify-self: stretch;
+  align-self: stretch;
+
+}
+
+.grid-col{
+  padding:0;
+  margin: 0;
+ // background-color: red;
+
+}
+
+button,
+button:active,
+button:focus,
+select,
+select:active,
+select:focus
+input,
+input:active,
+input:focus{
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  //box-shadow: 1px 1px 50px rgba(112, 124, 151, 0.15), 2px 2px 10px rgba(112, 124, 151, 0.1), 4px 4px 15px rgba(112, 124, 151, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B7BDCB;
+ box-shadow: 4px 4px 15px rgba(112, 124, 151, 0.05);
+  border-radius: 10px;
+}
+

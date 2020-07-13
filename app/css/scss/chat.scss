@@ -1,0 +1,121 @@
+@import 'vars';
+.chat {
+  position: relative;
+  background: #fff;
+  margin: 60px 40px 30px 0px;
+ // box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 10px 55px rgba(0, 0, 0, 0.05);
+}
+
+.head-border{
+ /* position: absolute;
+  left: 0;
+  top:0;*/
+  display: block;
+  background: #FAFBFF;
+  border-bottom: 2px solid #ECEEF5;
+  padding-top: 1px;
+}
+
+.attach-btn, .more-btn{
+  display: block;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 25px rgba(42, 139, 242, 0.07), 0px 7px 25px rgba(42, 139, 242, 0.03), 0px 10px 15px rgba(0, 0, 0, 0.03);
+  margin-left: 10px;
+
+  i{
+    display: block;
+    margin: 12px 9px 10px ;
+    color: $light;
+    font-size: 20px;
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.chat__input{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -30px;
+  margin: 40px 60px 0px 60px;
+  border-top: 1px solid #D8DAE2;
+  .add-file:nth-child(1){
+    top: -100px;
+  }
+  .add-file:nth-child(2){
+    top: -60px;
+  }
+}
+
+.add-file{
+  position: absolute;
+  top: -20px;
+  display: block;
+  border-radius: 50%;
+  background: #2A8BF2;
+  box-shadow: 0px 5px 25px rgba(42, 139, 242, 0.07), 0px 7px 25px rgba(42, 139, 242, 0.03), 0px 10px 15px rgba(0, 0, 0, 0.03);
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  i{
+    display: block;
+    margin: 7px 2px 6px 3px;
+    font-size: 20px;
+    color: #fff;
+  }
+  //visibility: hidden;
+}
+.chat-btn{
+  display: block;
+  border-radius: 50%;
+  background: linear-gradient(325.78deg, #2A8BF2 14.76%, #7CB8F7 87.3%);
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+
+  i{
+    display: block;
+    margin: 7px 2px 6px 3px;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.smiles{
+  padding-right: 5px;
+  i {
+    color: $light;
+    font-size: 19px;
+  }
+  &:hover{
+    i{
+      color: $activeColor;
+    }
+  }
+}
+
+.wrap-input{
+  display: flex;
+  align-items: center;
+}
+
+.input-msg{
+  min-height: 60px;
+  width: 100%;
+  resize: none;
+  border: none;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+
+  &:active, &:focus{
+    outline: 0;
+  }
+}
+
+

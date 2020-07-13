@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chats</title>
+
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+
+    <div class="container wrapper">
+        <div class="left__menu grid-col">
+            <div style="margin-bottom: 20px;"><div class="avatar"></div>
+                <p class="login"><span>Henry Jabbawockiez</span> <span class="shape"></span></p>
+            </div>
+            <ul class="menu">
+                <li>
+                    <div class="active__span"></div>
+                    <i class="demo-icon icon-home"></i>
+                    <a href="#">HOME</a>
+                </li>
+                <li class="active">
+                    <div class="active__span"></div>
+                    <i class="demo-icon icon-chat"></i>
+                    <a href="#">CHAT</a>
+                </li>
+                <li>
+                    <div class="active__span"></div>
+                    <i class="demo-icon icon-person"></i>
+                    <a href="#">CONTACT</a>
+                </li>
+                <li>
+                    <div class="active__span"></div>
+                    <i class="demo-icon icon-bell"></i>
+                    <a href="#">NOTIFICATION</a>
+                </li>
+                <li>
+                    <div class="active__span"></div>
+                    <i class="demo-icon icon-calendar"></i>
+                    <a href="#">CALENDAR</a>
+                </li>
+                <li>
+                    <div class="active__span"></div>
+                    <i class="demo-icon icon-settings"></i>
+                    <a href="#">SETTINGS</a>
+                </li>
+            </ul>
+            <div class="logout">
+                <i class="demo-icon icon-power"></i>
+                <a href="#">LOG OUT</a>
+            </div>
+        </div>
+
+            <div class="list__chats grid-col">
+                <div class="list__chats-header">
+                    <div class="list__chats-namefilter">
+                        <h2>Chats</h2>
+                        <div class="select">
+                            <select class="combobox" name="typeChats">
+                                <option value="recent">Recent Chats<i class="icon-demo icon-chevron-down"></i></option>
+                                <option value="unread">Unread Chats</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn__create-chat">
+                       <i class="demo-icon icon-plus"></i> Create New Chat
+                    </button>
+                </div>
+                <div class="list__chats-search">
+                        <i class="demo-icon icon-search"></i>
+                        <input type="search" placeholder="Search">
+                        <select class="combobox-btn" name="messages-cmb">
+                            <option value="">Messages<i class="icon-demo icon-chevron-down"></i></option>
+                            <option value="">/////</option>
+                            <option value="">/////</option>
+                            <option value="">/////</option>
+                        </select>
+
+                    </div>
+                <div class="list__chats-chat">
+                        <div class="chat-header">
+                            <div class="avatar-middle online">
+                                <div class="online-circle"></div>
+                            </div>
+                            <div class="username-action">
+                                <p>Luy Robin</p>
+                                <p class="">...writes</p>
+                                <p class="records-voice hidden"><span></span>records voice message</p>
+
+                            </div>
+                            <div class="time">
+                                <p>1 minute ago</p>
+                            </div>
+                        </div>
+                        <div class="message-block">
+                                <div class="content-message">
+                                    <p class="">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).</p>
+                                    <p class="voice-msg hidden"><i class="demo-icon icon-mic"></i>Voice message (1:15)</p>
+                                    <div class="attach">
+                                        <div class="files hidden"><i class="demo-icon icon-file"></i>Files (x2)</div>
+                                        <div class="photo hidden"><i class="demo-icon icon-image"></i>Photos (x3)</div>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <p>2</p>
+                                </div>
+                        </div>
+                    </div>
+                <div class="list__chats-chat">
+                    <div class="chat-header">
+                        <div class="avatar-middle online">
+                            <div class="online-circle"></div>
+                        </div>
+                        <div class="username-action">
+                            <p>Luy Robin</p>
+                            <p class="hidden">...writes</p>
+                            <p class="records-voice"><span></span>records voice message</p>
+
+                        </div>
+                        <div class="time">
+                            <p>1 minute ago</p>
+                        </div>
+                    </div>
+                    <div class="message-block">
+                        <div class="content-message">
+                            <p class="hidden">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).</p>
+                            <p class="voice-msg"><i class="demo-icon icon-mic"></i>Voice message (1:15)</p>
+                            <div class="attach">
+                                <div class="files hidden"><i class="demo-icon icon-file"></i>Files (x2)</div>
+                                <div class="photo hidden"><i class="demo-icon icon-image"></i>Photos (x3)</div>
+                            </div>
+                        </div>
+                        <div class="count">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list__chats-chat active-chat">
+                    <div class="chat-header">
+                        <div class="avatar-middle">
+                            <div class="online-circle"></div>
+                        </div>
+                        <div class="username-action">
+                            <p>Luy Robin</p>
+                            <p class="">last online 8 minutes ago</p>
+                            <p class="records-voice hidden"><span></span>records voice message</p>
+
+                        </div>
+                        <div class="time">
+                            <p>1 minute ago</p>
+                        </div>
+                    </div>
+                    <div class="message-block">
+                        <div class="content-message">
+                            <p class="">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).</p>
+                            <p class="voice-msg hidden"><i class="demo-icon icon-mic"></i>Voice message (1:15)</p>
+                            <div class="attach">
+                                <div class="files"><i class="demo-icon icon-file"></i>Files (x2)</div>
+                                <div class="photo hidden"><i class="demo-icon icon-image"></i>Photos (x3)</div>
+                            </div>
+                        </div>
+                        <div class="count hidden">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list__chats-chat">
+                    <div class="chat-header">
+                        <div class="avatar-middle online">
+                            <div class="online-circle"></div>
+                        </div>
+                        <div class="username-action">
+                            <p>Luy Robin</p>
+                            <p class="">...writes</p>
+                            <p class="records-voice hidden"><span></span>records voice message</p>
+
+                        </div>
+                        <div class="time">
+                            <p>1 minute ago</p>
+                        </div>
+                    </div>
+                    <div class="message-block">
+                        <div class="content-message">
+                            <p class="hidden">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).</p>
+                            <p class="voice-msg hidden"><i class="demo-icon icon-mic"></i>Voice message (1:15)</p>
+                            <div class="attach">
+                                <div class="files"><i class="demo-icon icon-file"></i>Files (x2)</div>
+                                <div class="photo"><i class="demo-icon icon-image"></i>Photos (x3)</div>
+                            </div>
+                        </div>
+                        <div class="count hidden">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="chat grid-col">
+                <div class="head-border">
+                    <div class="chat-header">
+                    <div class="avatar-middle online">
+                        <div class="online-circle"></div>
+                    </div>
+                    <div class="username-action">
+                        <p>Luy Robin</p>
+                        <p class="">...writes</p>
+                        <p class="records-voice hidden"><span></span>records voice message</p>
+                    </div>
+                    <div class="attach-btn"><i class="demo-icon icon-attach"></i></div>
+                    <div class="more-btn"><i class="demo-icon icon-more-vertical"></i></div>
+                </div>
+                </div>
+                <div class="chat__content"></div>
+                <div class="chat__input">
+                    <div class="add-file" id="add-image"><i class="demo-icon icon-image"></i></div>
+                    <div class="add-file" id="add-video"><i class="demo-icon icon-video"></i></div>
+                    <div class="add-file" id="add-file"><i class="demo-icon icon-file"></i></div>
+<!--                    <div class="fixed-input">-->
+                        <div class="wrap-input">
+                            <div class="chat-btn" id="add-files-btn"><i class="demo-icon icon-plus"></i></div>
+                            <textarea type="text"  class="input-msg" name="input-msg" placeholder="Type a message here"></textarea>
+                            <div class="smiles"><i class="demo-icon icon-smile"></i></div>
+                            <div class="chat-btn"><i class="demo-icon icon-navigation"></i></div>
+                        </div>
+<!--                    </div>-->
+                </div>
+            </div>
+    </div>
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>
