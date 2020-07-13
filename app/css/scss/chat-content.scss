@@ -1,0 +1,85 @@
+@import "vars";
+.chat__content{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 51.6vh;
+  overflow: auto;
+}
+
+.avatar-mini{
+  width: 35px;
+  height: 35px;
+  background: url('../images/24.png') center no-repeat;
+  background-size: contain;
+}
+
+
+
+.content-message-get, .content-message-send {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+
+
+.message-get {
+  background: linear-gradient(93.27deg, #60A9F6 0%, #2A8BF2 100%);
+  box-shadow: 10px 10px 50px rgba(42, 139, 242, 0.1), 15px 15px 35px rgba(42, 139, 242, 0.05), 10px 10px 25px rgba(42, 139, 242, 0.1);
+  border-radius: 0px 10px 10px 10px;
+  margin: 0px 15px 7px 20px;
+  padding: 10px 15px;
+  p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+  }
+  align-self: flex-start;
+}
+.message-send {
+  background: #fff;
+  border-radius: 10px 10px 0px 10px;
+  border: 1px solid rgba(112, 124, 151, 0.25);
+  box-shadow: 15px 15px 35px rgba(112, 124, 151, 0.05), 10px 10px 25px rgba(112, 124, 151, 0.05);
+  margin: 0px 15px 7px 20px;
+  padding: 10px 15px;
+  p{
+    font-size: 14px;
+    line-height: 24px;
+    color: $light;
+  }
+  align-self: flex-end;
+}
+
+.message-more, .check-mark{
+  align-self: center;
+ // margin-bottom: 15px;
+  i{
+    font-size: 20px;
+    color: #B7BDCB;
+  }
+}
+
+.check-mark{
+  i{
+    font-size: 15px;
+  }
+}
+
+.message-and-time{
+  display: flex;
+  flex-direction: column;
+}
+.message-time{
+  color: $light;
+  font-size: 11px;
+  align-self: flex-end;
+  margin-right: 45px;
+}
+
+.messages-block{
+  display: flex;
+  align-content: flex-start;
+}
+

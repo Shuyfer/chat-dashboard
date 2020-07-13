@@ -50,6 +50,24 @@
   .add-file:nth-child(2){
     top: -60px;
   }
+  z-index: 1;
+}
+
+.chat__input input[type=file] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  position: absolute;
+  z-index: -10;
+}
+
+
+.chat__input input[type=submit] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  position: absolute;
+  z-index: -10;
 }
 
 .add-file{
@@ -62,14 +80,19 @@
   width: 35px;
   height: 35px;
   flex-shrink: 0;
+
   i{
     display: block;
     margin: 7px 2px 6px 3px;
     font-size: 20px;
     color: #fff;
   }
-  //visibility: hidden;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
+
 .chat-btn{
   display: block;
   border-radius: 50%;
@@ -80,9 +103,14 @@
 
   i{
     display: block;
-    margin: 7px 2px 6px 3px;
+    padding: 7px 4px;
+   // margin: 7px 2px 6px 3px;
     font-size: 20px;
     color: #fff;
+  }
+
+  &:hover{
+    cursor: pointer;
   }
 }
 
@@ -117,5 +145,6 @@
     outline: 0;
   }
 }
+
 
 

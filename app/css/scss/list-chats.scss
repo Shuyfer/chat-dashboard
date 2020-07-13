@@ -155,9 +155,13 @@
   position: relative;
   flex-shrink: 0;
   border-radius: 50%;
+}
+
+.avatar-middle{
   width: 54px;
   height: 54px;
   background: url('../images/24.png') center no-repeat;
+  background-size: contain;
 }
 .online-circle{
   display: none;
