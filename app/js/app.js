@@ -12,6 +12,8 @@ $(document).ready(function() {
         $(this).css('display', 'none');
         $('.list__chats').css({'grid-column': '2/4', 'margin-left': '0px'});
         $('.chat').css('grid-column', '4/7');
+        $('.left__menu').css({'display': 'flex','grid-column': '1'});
+
     });
 });
 
@@ -32,4 +34,18 @@ $(document).ready(function() {
 //         $('.shape').css('color', 'red');
 //     });
 //
+// });
+
+
+// $(function typeIt() {
+//     let counter = 0;
+//     $('.action-user').removeAttribute("hidden");
+//     let i = setInterval(function(){
+//         $('.action-user').innerHTML = telecopy.substr(0, counter) + cursor;
+//         counter++;
+//         alert('');
+//         if(counter === telecopy.length + 1) {
+//             clearInterval(i);
+//         }
+//     }, 100);
 // });

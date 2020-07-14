@@ -1,7 +1,7 @@
 @import 'vars';
 
 .left__menu {
-  display: flex;
+ // display: flex;
   flex-direction: column;
   min-width: 250px;
   background: $bgMenu;
@@ -138,6 +138,68 @@
       margin: 12px 5px;
     }
   }
+}
+
+@media(max-width: 1040px) {
+  .left__menu{
+    display: none;
+  }
+  .list__chats{
+    grid-column: 1/4;
+    margin-left: 20px;
+  }
+  .chat{
+    grid-column: 4/7;
+      margin-left: 0px;
+      margin-right: 0px;
+      .chat__input{
+        margin: 0 45px 0 15px;
+      }
+    }
+}
+
+@media(max-width: 945px) {
+  .left__menu{
+    display: none;
+  }
+  .list__chats{
+    grid-column: 1/3;
+    margin-left: 20px;
+  }
+  .chat{
+    grid-column: 3/7;
+  }
+}
+
+@media(max-width: 900px) {
+  .left__menu{
+    display: none;
+  }
+  .list__chats{
+    display: none;
+  }
+  .chat{
+    grid-column: 1/7;
+    margin-left: 0px;
+    margin-right: 0px;
+    .chat__input{
+      margin: 0 45px 0 15px;
+    }
+  }
+}
+
+@media(min-width: 1040px) {
+  .left__menu{
+    display: flex;
+  }
+  .list__chats{
+    grid-column: 2/4;
+  }
+
+  .chat{
+    grid-column: 4/7;
+  }
+
 }
 
 

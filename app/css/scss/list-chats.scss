@@ -1,7 +1,7 @@
 @import 'vars';
 
 .list__chats{
-  grid-column: 2/4;
+
   grid-row: 1;
   height: 100vh;
   overflow: auto;
@@ -20,15 +20,13 @@
     font-weight: 400;
     color: #fff;
     padding-right: 20px;
-    padding-left: 14px;
+  //  padding-left: 14px;
     background: linear-gradient(100.61deg, #7CB8F7 0%, #2A8BF2 100%);
     box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15), 3px 4px 25px rgba(42, 139, 242, 0.05), 4px 6px 25px rgba(42, 139, 242, 0.15);
     border-radius: 6px;
     border: none;
     //transition: all .3s;
-    i{
-      font-size: 20px;
-    }
+
 
     &:hover{
       cursor: pointer;
@@ -123,13 +121,13 @@
   border-bottom: none;
   background: none;
   border-left: 2px solid  #F5F4FB;
-  height: 100%;
   color: $light;
   font-size: 16px;
   font-weight: 500;
   padding: 17px 15px 17px 20px;
   margin-right: 10px;
   height: auto;
+  flex-shrink: 0;
 
   &:hover{
     cursor: pointer;
@@ -313,5 +311,44 @@
   0% { border: 1px solid #CAE1FB; }
   60% { border: 3px solid #CAE1FB; }
 }
+
+@media(max-width: 1280px){
+  .combobox-btn{
+      display: none;
+  }
+}
+
+@media(max-width: 1195px){
+  .btn__create-chat{
+    span{
+      display: none;
+    }
+    i{
+      font-size: 26px;
+    }
+    width: 50px;
+    padding-left: 7px;
+  }
+}
+@media(min-width: 1195px){
+  .btn__create-chat{
+    padding-left: 14px;
+    i{
+      font-size: 20px;
+    }
+  }
+}
+
+@media(max-width: 1160px) {
+  .time{
+    &::after{
+      content: '1m.'
+    }
+    p{
+      display: none;
+    }
+  }
+}
+
 
 
