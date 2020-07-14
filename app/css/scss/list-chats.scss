@@ -8,11 +8,6 @@
   padding-right: 25px;
 }
 
-.chat{
-  grid-column: 4/7;
-  grid-row: 1;
-}
-
 .list__chats-header{
   display: flex;
   margin-top: 60px;
@@ -139,6 +134,7 @@
   &:hover{
     cursor: pointer;
   }
+
 }
 
 .list__chats-chat{
@@ -148,6 +144,9 @@
   background: #FFFFFF;
   border-radius: 6px;
   margin-top: 24px;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .avatar-middle, .avatar-mini{
@@ -308,6 +307,7 @@
     color: #CAE1FB;
   }
 }
+
 
 @keyframes records {
   0% { border: 1px solid #CAE1FB; }

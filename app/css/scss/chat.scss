@@ -1,15 +1,14 @@
 @import 'vars';
 .chat {
   position: relative;
+  grid-column: 4/7;
+  grid-row: 1;
   background: #fff;
   margin: 60px 40px 30px 0px;
  // box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 10px 55px rgba(0, 0, 0, 0.05);
 }
 
 .head-border{
- /* position: absolute;
-  left: 0;
-  top:0;*/
   display: block;
   background: #FAFBFF;
   border-bottom: 2px solid #ECEEF5;
@@ -103,7 +102,7 @@
 
   i{
     display: block;
-    padding: 7px 4px;
+    padding: 7px 3px;
    // margin: 7px 2px 6px 3px;
     font-size: 20px;
     color: #fff;

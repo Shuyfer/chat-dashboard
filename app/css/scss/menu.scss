@@ -3,9 +3,6 @@
 .left__menu {
   display: flex;
   flex-direction: column;
-  //position: fixed;
-  //top: 0;
-  //left: 0;
   min-width: 250px;
   background: $bgMenu;
   box-shadow: 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 14.0351px 0px 25px rgba(86, 128, 248, 0.03);
@@ -123,6 +120,26 @@
     visibility: visible;
   }
 }
+
+.open-menu{
+  display: none;
+  position: fixed;
+  border-radius: 0 3px 3px 0;
+  visibility: visible;
+  color: #fff;
+  width: 6px;
+
+  &:hover{
+    width: 54px;
+    cursor: pointer;
+    span::after{
+      display: block;
+      content: 'Menu';
+      margin: 12px 5px;
+    }
+  }
+}
+
 
 
 
