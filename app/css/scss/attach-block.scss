@@ -1,0 +1,53 @@
+@import 'vars';
+
+.attach__block{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.05) 48.96%, rgba(0, 0, 0, 0.5) 100%), rgba(24, 24, 24, 0.8);
+    background-blend-mode: overlay, normal;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    z-index: 1;
+
+}
+
+/*
+ display: block;
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  right: 20%;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 50px 50px;
+  z-index: 2;
+  &::before {
+*/
+.attach__list{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background:  #FAFBFF;
+  margin: 40px 20% 0;
+  border-bottom: 2px solid #eceef5;
+
+  a{
+    text-decoration: none;
+    font-weight: 500;
+    color: $activeColor;
+  }
+}
+.attach__content{
+  margin: 0 20%;
+  overflow: auto;
+  height: 75vh;
+  background: #fff;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.images{
+  img{
+    max-width: 150px;
+  }
+}
